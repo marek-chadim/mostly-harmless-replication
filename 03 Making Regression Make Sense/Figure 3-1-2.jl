@@ -7,8 +7,8 @@ using Gadfly
 using Cairo
 
 # Download the data and unzip it
-download("http://economics.mit.edu/files/397", "asciiqob.zip")
-run(`unzip asciiqob.zip`)
+# download("https://economics.mit.edu/people/faculty/josh-angrist/angrist-data-archive", "asciiqob.zip")
+# run(`unzip asciiqob.zip`)
 
 # Import data
 pums = DataFrame(CSV.File("asciiqob.txt", header = false, delim = " ",  ignorerepeated = true))
